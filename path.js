@@ -1,1 +1,14 @@
-
+const url = "https://crytominers.github.io/crytosnippets/";
+const home = "https://crytominers.github.io/crytosnippets/index.html";
+const ltcdirectory = "https://crytominers.github.io/crytosnippets/ltc/";
+const tikdirectory = "https://crytominers.github.io/crytosnippets/tik/";
+const trxdirectory = "https://crytominers.github.io/crytosnippets/trx/";
+const whalesdirectory ="https://crytominers.github.io/crytosnippets/whales/";
+const dogepaid = "https://crytominers.github.io/crytosnippets/dogepaid/";
+const dogemax = "https://crytominers.github.io/crytosnippets/dogemax/";
+const ltcref = ltcdirectory + "index.html";
+const tikref = tikdirectory + "index.html";
+const trxref = trxdirectory + "index.html";
+const whalesref = whalesdirectory + "index.html";
+const dogepaidref = dogepaiddirectory + "index.html";
+const dogemaxref = dogemaxdirectory + "index.html";
