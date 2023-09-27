@@ -16,3 +16,6 @@ const ltcsignup = "https://ltcautomining.com/";
 const whalesignup = "https://whalesmining.com/";
 const tiksignup = "https://tikmining.com/";
 const trxsignup = "https://trxdeepminer.com/";
+const tronsignup = "https://tronminingfarm.com";
+const dogepaidsignup = "https://dogeminingpaid.com/";
+const dogemax = "https://dogemaxmining.com/";
