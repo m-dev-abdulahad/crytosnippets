@@ -12,3 +12,7 @@ const trxref = trxdirectory + "index.html";
 const whalesref = whalesdirectory + "index.html";
 const dogepaidref = dogepaiddirectory + "index.html";
 const dogemaxref = dogemaxdirectory + "index.html";
+const ltcsignup = "https://ltcautomining.com/";
+const whalesignup = "https://whalesmining.com/";
+const tiksignup = "https://tikmining.com/";
+const trxsignup = "https://trxdeepminer.com/";
