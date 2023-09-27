@@ -18,5 +18,4 @@ class MainComponent {
   }
 }
 
-// Example usage:
  
