@@ -13,6 +13,9 @@ class VerticalLayout extends MainComponent {
 
     // Convert the virtual layout to a real DOM element.
     this.$verticalLayout = createRealNode(this.virtualLayout);
+
+    // Set $root initially to the vertical layout.
+    this.$root = this.$verticalLayout;
   }
 
   // Method to add a virtual child node to the vertical layout.
@@ -32,7 +35,13 @@ class VerticalLayout extends MainComponent {
     // Clear the real DOM element when all children are removed.
     this.update(this.$verticalLayout, createRealNode(this.virtualLayout));
   }
+
+  // Render the vertical layout to the DOM.
+  render($newElement) {
+    super.render($newElement);
+  }
 }
+
 class HorizontalLayout extends MainComponent {
   constructor() {
     super(); // Call the constructor of the parent class.
@@ -48,6 +57,9 @@ class HorizontalLayout extends MainComponent {
 
     // Convert the virtual layout to a real DOM element.
     this.$horizontalLayout = createRealNode(this.virtualLayout);
+
+    // Set $root initially to the horizontal layout.
+    this.$root = this.$horizontalLayout;
   }
 
   // Method to add a virtual child node to the horizontal layout.
@@ -58,13 +70,6 @@ class HorizontalLayout extends MainComponent {
       // Update the real DOM element when a child is added.
       this.update(this.$horizontalLayout, createRealNode(this.virtualLayout));
     }
-
-    render($newElement)
-    {
-      this.$root = this.$verticalLayout;
-      super.render($newElement);
-      
-    }
   }
 
   // Method to clear all virtual child nodes from the horizontal layout.
@@ -73,5 +78,10 @@ class HorizontalLayout extends MainComponent {
 
     // Clear the real DOM element when all children are removed.
     this.update(this.$horizontalLayout, createRealNode(this.virtualLayout));
+  }
+
+  // Render the horizontal layout to the DOM.
+  render($newElement) {
+    super.render($newElement);
   }
 }
