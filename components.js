@@ -58,6 +58,13 @@ class HorizontalLayout extends MainComponent {
       // Update the real DOM element when a child is added.
       this.update(this.$horizontalLayout, createRealNode(this.virtualLayout));
     }
+
+    render($newElement)
+    {
+      this.$root = this.$verticalLayout;
+      super.render($newElement);
+      
+    }
   }
 
   // Method to clear all virtual child nodes from the horizontal layout.
